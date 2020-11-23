@@ -1,0 +1,41 @@
+/* CSS Document */
+
+/* Style div All*/
+body {
+  position:absolute; 
+  left: 50%;  
+  margin-top: 30px;
+  width: 800px; 
+  margin-left: -400px; 
+  font:Verdana, Arial, Helvetica, sans-serif;
+}
+
+.RSSTitle {
+	color: gold;
+	font-size: 30px;
+}
+.title  a:visited{
+	 color:#6633CC;
+}
+
+.title  a:hover{
+	 color:#FF3333;
+}
+
+/* RSS description*/
+.desc{
+	padding-left:50px;
+	padding-right: 100px;
+	text-align:justify;
+	display:none;
+	font-size:14px;
+	border: solid 1px;
+}
+
+/* RSS space between sub-title & sub-description*/
+.item{
+	height:20px;
+	width:700px;
+	margin-left: 50px;
+	padding-bottom: 20px;;
+}

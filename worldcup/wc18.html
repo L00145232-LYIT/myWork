@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>WORLD CUP 2018</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(166, 106, 206);
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(39, 21, 32);
+        }
+
+        /* Style the header */
+        header {
+            background-color: rgb(207, 134, 255);
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+            color: rgb(233, 233, 233);
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        h3 {
+            background-color: rgb(136, 218, 140);
+            padding: 20px;
+        }
+
+        h4 {
+            background-color: rgb(255, 0, 106);
+            padding: 20px;
+        }
+
+
+        button {
+            background-color: #2a352a;
+            border: 1;
+            color: white;
+            padding: 20px 80px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #3e8e41;
+        }
+
+        table {
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            color: rgb(241, 233, 187);
+            text-align: center;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ddd;
+            background-color: #000000;
+            width: 140px;
+            padding: 8px;
+            text-align: center;
+
+        }
+
+        table tr:nth-child(even) {
+            background-color: #000000;
+        }
+
+        table tr:hover {
+            background-color: #ddd;
+        }
+
+        table th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            background-color: rgb(206, 214, 207);
+            color: rgb(93, 110, 16);
+        }
+
+
+
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+
+            nav,
+            article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+
+        <header><img src="wc18.png" alt="Fort" width="300" height="145"></header>
+        <h3>
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#">ONLY CHOOSE ONE OPTION AT A TIME</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                        <li class="active"><button onclick="chooseDate()">Display Date</button></li>
+                        <li class="#"> <button onclick="chooseCountry()">Countries</button></li>
+                        <li class="#"> <button onclick="chooseGroup()">Groups</button></li>
+                        <li class="#"> <button onclick="groupGame()">Group Games</button></li>
+                        <li class="#"><button onclick="chooseStage()">Knockout Stages</button></li>
+                        <li class="#"><button onclick="scorer()">Top Goalscorer</button></li>
+                        <li class="#"><button onclick="resetPage()">Reset Page</button></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <br>
+            <br>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <label for="date"> Choose a Date:<br><br></label>
+                        <select name="date" id="date">
+                            <option value="Match1">14 June (Matchday 1)</option>
+                            <option value="Match2">15 June (Matchday 2)</option>
+                            <option value="Match3">16 June (Matchday 3)</option>
+                            <option value="Match4">17 June (Matchday 4)</option>
+                            <option value="Match5">18 June (Matchday 5)</option>
+                            <option value="Match6">19 June (Matchday 6)</option>
+                            <option value="Match7">20 June (Matchday 7)</option>
+                            <option value="Match8">21 June (Matchday 8)</option>
+                            <option value="Match9">22 June (Matchday 9)</option>
+                            <option value="Match10">23 June (Matchday 10)</option>
+                            <option value="Match11">24 June (Matchday 11)</option>
+                            <option value="Match12">25 June (Matchday 12)</option>
+                            <option value="Match13">26 June (Matchday 13)</option>
+                            <option value="Match14">27 June (Matchday 14)</option>
+                            <option value="Match15">28 June (Matchday 15)</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <label for="country"> Choose a country:<br><br></label>
+                        <select name="country" id="country">
+                            <option value="Argentina">Argentina</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Brazil">Brazil</option>
+
+                            <option value="Colombia">Colombia</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Denmark">Denmark</option>
+
+                            <option value="Egypt">Egypt</option>
+                            <option value="England">England</option>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+
+
+                            <option value="Iceland">Iceland</option>
+                            <option value="Iran">Iran</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Korea Republic">Korea Republic</option>
+
+                            <option value="Mexico">Mexico</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Panama">Panama</option>
+
+                            <option value="Peru">Peru</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Russia">Russia</option>
+
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Spain">Spain</option>
+
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Uruguay">Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-3">
+
+                        <label for="group"> Choose a Group:<br><br></label>
+                        <select name="group" id="group">
+                            <option value="GroupA">Group A</option>
+                            <option value="GroupB">Group B</option>
+                            <option value="GroupC">Group C</option>
+                            <option value="GroupD">Group D</option>
+                            <option value="GroupE">Group E</option>
+                            <option value="GroupF">Group F</option>
+                            <option value="GroupG">Group G</option>
+                            <option value="GroupH">Group H</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-3">
+
+                        <label for="groupp"> Choose a Group Game:<br><br></label>
+                        <select name="groupp" id="groupp">
+                            <option value="groupA">Group A</option>
+                            <option value="groupB">Group B</option>
+                            <option value="groupC">Group C</option>
+                            <option value="groupD">Group D</option>
+                            <option value="groupE">Group E</option>
+                            <option value="groupF">Group F</option>
+                            <option value="groupG">Group G</option>
+                            <option value="groupH">Group H</option>
+                        </select>
+                    </div>
+
+                    <div class="col-sm-3">
+
+                        <label for="knock"> Choose a Knockout Round:<br></label>
+                        <select name="knock" id="knock">
+                            <option value="roundOf16">Round of 16</option>
+                            <option value="quarter">Quarter Finals</option>
+                            <option value="semi">Semi Finals</option>
+                            <option value="third">Match for 3rd Place</option>
+                            <option value="final">Final</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </h3>
+        <h4>
+            <p id="demo">FIFA 2018 WORLD CUP</p>
+        </h4>
+
+    </center>
+
+    <script>
+        function chooseDate() {
+            var wcObj;
+            var xhttp = new XMLHttpRequest();
+            var result = "";
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var wcTxt = this.responseText;
+                    wcObj = JSON.parse(wcTxt);
+                    var names = "";
+                    //x=amount of games z=day of match 
+                    function matchday(x, z) {
+                        names += "<table><tr><th> MATCHDAY</th></tr></table>"
+                        for (var y = 0; y < x; y++) {
+
+                            names += "<table><tr><td>" + wcObj.rounds[z].matches[y].team1.name + "</td><td> " +
+                                " <img src=teams/" + wcObj.rounds[z].matches[y].team1.name + ".png width='80' height='55'> " +
+                                wcObj.rounds[z].matches[y].score1 + " : " +
+                                wcObj.rounds[z].matches[y].score2 + "" +
+                                " <img src=teams/" + wcObj.rounds[z].matches[y].team2.name + ".png width='80' height='55'>" + "</td><td> " +
+                                wcObj.rounds[z].matches[y].team2.name + "</td></tr><table>";
+
+                        }
+                        document.getElementById("demo").innerHTML = names;
+                    }
+                    if (document.querySelector('select[name=date').value == "Match1") {
+                        matchday(1, 0);
+                    }
+
+                    if (document.querySelector('select[name=date').value == "Match2") {
+                        matchday(3, 1);
+                    }
+
+                    if (document.querySelector('select[name=date').value == "Match3") {
+                        matchday(4, 2);
+                    }
+                    if (document.querySelector('select[name=date').value == "Match4") {
+                        matchday(3, 3);
+                    }
+                    if (document.querySelector('select[name=date').value == "Match5") {
+                        matchday(3, 4);
+                    }
+                    if (document.querySelector('select[name=date').value == "Match6") {
+                        matchday(3, 5);
+
+                    }
+                    if (document.querySelector('select[name=date').value == "Match7") {
+                        matchday(3, 6);
+
+                    }
+
+                    if (document.querySelector('select[name=date').value == "Match8") {
+                        matchday(3, 7);
+                    }
+                    if (document.querySelector('select[name=date').value == "Match9") {
+                        matchday(3, 8);
+
+                    }
+                    if (document.querySelector('select[name=date').value == "Match10") {
+                        matchday(3, 9);
+
+                    }
+
+                    if (document.querySelector('select[name=date').value == "Match11") {
+                        matchday(3, 10);
+                    }
+                    if (document.querySelector('select[name=date').value == "Match12") {
+                        matchday(4, 11);
+
+                    }
+                    if (document.querySelector('select[name=date').value == "Match13") {
+                        matchday(4, 12);
+                    }
+
+                    if (document.querySelector('select[name=date').value == "Match14") {
+                        matchday(4, 13);
+                    }
+                    if (document.querySelector('select[name=date').value == "Match15") {
+                        matchday(4, 14);
+                    }
+                }
+
+            };
+            xhttp.open("GET", "worldcup2018.json", true); // used generator here
+            xhttp.send();
+
+
+        }
+
+        function chooseCountry() {
+            var wcObj;
+            var xhttp = new XMLHttpRequest();
+            var result = "";
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var wcTxt = this.responseText;
+                    wcObj = JSON.parse(wcTxt);
+                    var names = "";
+                    function country(word) {
+                        names += " <table><tr><th><img src=teams/" + word + ".png width='80' height='55'></th></tr></table> ";
+                        for (var i = 0; i < 20; i++) {
+                            for (var j = 0; j < wcObj.rounds[i].matches.length; j++) {
+
+                                if ((wcObj.rounds[i].matches[j].team1.name == word) ||
+                                    (wcObj.rounds[i].matches[j].team2.name == word)) {
+                                    names += "<table><tr><td>" + wcObj.rounds[i].matches[j].team1.name + "</td><td> " +
+                                        " <img src=teams/" + wcObj.rounds[i].matches[j].team1.name + ".png width='80' height='55'> " +
+                                        wcObj.rounds[i].matches[j].score1 + " : " +
+                                        wcObj.rounds[i].matches[j].score2 +
+                                        " <img src=teams/" + wcObj.rounds[i].matches[j].team2.name + ".png width='80' height='55'>" + "</td><td> " +
+                                        wcObj.rounds[i].matches[j].team2.name + "</td></tr><table>";
+
+                                }
+
+                            }
+                        }
+                        document.getElementById("demo").innerHTML = names;
+                    }
+                    //1
+                    if (document.querySelector('select[name=country').value == "Argentina") {
+                        country("Argentina");
+                    }
+
+                    //2
+                    if (document.querySelector('select[name=country').value == "Australia") {
+                        country("Australia");
+                    }
+                    //3
+                    if (document.querySelector('select[name=country').value == "Belgium") {
+                        country("Belgium");
+                    }
+                    //4
+                    if (document.querySelector('select[name=country').value == "Brazil") {
+                        country("Brazil");
+                    }
+                    //5
+                    if (document.querySelector('select[name=country').value == "Columbia") {
+                        country("Colombia");
+                    }
+                    //6
+                    if (document.querySelector('select[name=country').value == "Costa Rica") {
+                        country("Costa_Rica");
+                    }
+
+                    //7
+                    if (document.querySelector('select[name=country').value == "Croatia") {
+                        country("Croatia");
+                    }
+                    //8
+                    if (document.querySelector('select[name=country').value == "Denmark") {
+                        country("Denmark");
+                    }
+
+                    //9
+                    if (document.querySelector('select[name=country').value == "Egypt") {
+                        country("Egypt");
+                    }
+                    //10
+                    if (document.querySelector('select[name=country').value == "England") {
+                        country("England");
+                    }
+                    //11
+                    if (document.querySelector('select[name=country').value == "France") {
+                        country("France");
+                    }
+                    //12
+                    if (document.querySelector('select[name=country').value == "Germany") {
+                        country("Germany");
+                    }
+                    //13
+                    if (document.querySelector('select[name=country').value == "Iceland") {
+                        country("Iceland");
+                    }
+                    //14
+                    if (document.querySelector('select[name=country').value == "Iran") {
+                        country("Iran");
+                    }
+
+                    //15
+                    if (document.querySelector('select[name=country').value == "Japan") {
+                        country("Japan");
+                    }
+                    //16
+                    if (document.querySelector('select[name=country').value == "Korea Republic") {
+                        country("Korea_Republic");
+                    }
+
+                    //17
+                    if (document.querySelector('select[name=country').value == "Mexico") {
+                        country("Mexico");
+                    }
+                    //18
+                    if (document.querySelector('select[name=country').value == "Morocco") {
+                        country("Morocco");
+                    }
+                    //19
+                    if (document.querySelector('select[name=country').value == "Nigeria") {
+                        country("Nigeria");
+                    }
+                    //20
+                    if (document.querySelector('select[name=country').value == "Panama") {
+                        country("Panama");
+                    }
+                    //21
+                    if (document.querySelector('select[name=country').value == "Peru") {
+                        country("Peru");
+                    }
+                    //22
+                    if (document.querySelector('select[name=country').value == "Poland") {
+                        country("Poland");
+                    }
+
+                    //23
+                    if (document.querySelector('select[name=country').value == "Portugal") {
+                        country("Portugal");
+                    }
+                    //24
+                    if (document.querySelector('select[name=country').value == "Russia") {
+                        country("Russia");
+                    }
+
+                    //25
+                    if (document.querySelector('select[name=country').value == "Saudi Arabia") {
+                        country("Saudi_Arabia");
+                    }
+
+                    //26
+                    if (document.querySelector('select[name=country').value == "Senegal") {
+                        country("Senegal");
+                    }
+                    //27
+                    if (document.querySelector('select[name=country').value == "Serbia") {
+                        country("Serbia");
+                    }
+                    //28
+                    if (document.querySelector('select[name=country').value == "Spain") {
+                        country("Spain");
+                    }
+                    //29
+                    if (document.querySelector('select[name=country').value == "Sweden") {
+                        country("Sweden");
+                    }
+                    //30
+                    if (document.querySelector('select[name=country').value == "Switzerland") {
+                        country("Switzerland");
+
+                    }
+                    //31
+                    if (document.querySelector('select[name=country').value == "Tunisia") {
+                        country("Tunisia");
+                    }
+
+                    //32
+                    if (document.querySelector('select[name=country').value == "Uruguay") {
+                        country("Uruguay");
+                    }
+
+
+
+                }
+            };
+            xhttp.open("GET", "worldcup2018.json", true); // used generator here
+            xhttp.send();
+        }
+
+        function chooseGroup() {
+            var wcObj;
+            var xhttp = new XMLHttpRequest();
+            var result = "";
+
+
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var wcTxt = this.responseText;
+                    wcObj = JSON.parse(wcTxt);
+                    var names = "";
+
+                    function group(x, z) {
+                        names += "<table><tr> <th>TEAM</th> <th>P</th> <th>W</th> <th>D</th> <th>L</th></tr></table>";
+                        for (var y = 0; y < x; y++) {
+
+                            names += "<table><tr><td>" + wcObj.groups[z].teams[y].name +
+                                " <img src=teams/" + wcObj.groups[z].teams[y].name + ".png width='80' height='55'></td><td>" +
+                                wcObj.groups[z].teams[y].points + "</td><td> " +
+                                wcObj.groups[z].teams[y].wins + "</td><td> " +
+                                wcObj.groups[z].teams[y].draws + " </td><td>" +
+                                wcObj.groups[z].teams[y].loses + "</td></tr><table>";
+
+
+                        }
+                        document.getElementById("demo").innerHTML = names;
+                    }
+                    if (document.querySelector('select[name=group').value == "GroupA") {
+
+                        group(4, 0);
+
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupB") {
+                        group(4, 1);
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupC") {
+                        group(4, 2);
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupD") {
+                        group(4, 3);
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupE") {
+                        group(4, 4);
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupF") {
+                        group(4, 5);
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupG") {
+                        group(4, 6);
+                    }
+
+                    if (document.querySelector('select[name=group').value == "GroupH") {
+                        group(4, 7);
+                    }
+                }
+
+            };
+            xhttp.open("GET", "groups.json", true); // used generator here
+            xhttp.send();
+        }
+
+        function groupGame() {
+            var wcObj;
+            var xhttp = new XMLHttpRequest();
+            var result = "";
+
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var wcTxt = this.responseText;
+                    wcObj = JSON.parse(wcTxt);
+                    var names = "";
+                    function ggame(word) {
+                        for (var i = 0; i < 15; i++) {
+                         
+                            for (var j = 0; j < wcObj.rounds[i].matches.length; j++) {
+                                  
+                                if (wcObj.rounds[i].matches[j].group == word) {
+                                  
+                                    names += "<table><tr><th>" + wcObj.rounds[i].matches[j].group + "</th></tr></table>";
+                                    names += "<table><tr><td>" + wcObj.rounds[i].matches[j].team1.name + "</td><td> " +
+                                        " <img src=teams/" + wcObj.rounds[i].matches[j].team1.name + ".png width='80' height='55'> " +
+                                        wcObj.rounds[i].matches[j].score1 + " : " +
+                                        wcObj.rounds[i].matches[j].score2 +
+                                        " <img src=teams/" + wcObj.rounds[i].matches[j].team2.name + 
+                                        ".png width='80' height='55'>" + "</td><td> " +
+                                        wcObj.rounds[i].matches[j].team2.name + "</td></tr><table>";
+
+                                }
+
+                            }
+                        }
+                        document.getElementById("demo").innerHTML = names;
+                    }
+                    if (document.querySelector('select[name=groupp').value == "groupA") {
+                        ggame("Group A");
+                    }
+
+                    if (document.querySelector('select[name=groupp').value == "groupB") {
+                        ggame("Group B");
+                    }
+
+                    if (document.querySelector('select[name=groupp').value == "groupC") {
+                        ggame("Group C");
+                    }
+
+                    if (document.querySelector('select[name=groupp').value == "groupD") {
+                        ggame("Group D");
+                    }
+                
+                    if (document.querySelector('select[name=groupp').value == "groupE") {
+                        ggame("Group E");
+                    }
+
+                    if (document.querySelector('select[name=groupp').value == "groupF") {
+                    ggame("Group F");
+                    }
+
+                    if (document.querySelector('select[name=groupp').value == "groupG") {
+                    ggame("Group G");
+                    }
+
+                    if (document.querySelector('select[name=groupp').value == "groupH") {
+                    ggame("Group H");
+                    }
+            
+            }
+        };
+        xhttp.open("GET", "worldcup2018.json", true); // used generator here
+        xhttp.send();
+
+        }
+
+        function chooseStage() {
+            var wcObj;
+            var xhttp = new XMLHttpRequest();
+            var result = "";
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var wcTxt = this.responseText;
+                    wcObj = JSON.parse(wcTxt);
+
+                    var names = "";
+                    //x=amount of games, z=round
+                    function knockout(x, z) {
+                        names += "<table><tr><th> MATCHDAY</th></tr></table>"
+                        for (var y = 0; y < x; y++) {
+
+                            names += "<table><tr><td>" + wcObj.rounds[z].matches[y].team1.name + "</td><td> " +
+                                " <img src=teams/" + wcObj.rounds[z].matches[y].team1.name + ".png width='80' height='55'> " +
+                                wcObj.rounds[z].matches[y].score1 + " : " +
+                                wcObj.rounds[z].matches[y].score2 + "" +
+                                " <img src=teams/" + wcObj.rounds[z].matches[y].team2.name + ".png width='80' height='55'>" + "</td><td> " +
+                                wcObj.rounds[z].matches[y].team2.name + "</td></tr><table>";
+                        }
+                        document.getElementById("demo").innerHTML = names;
+                    }
+                    if (document.querySelector('select[name=knock').value == "roundOf16") {
+                        knockout(8, 0);
+
+                    }
+
+                    if (document.querySelector('select[name=knock').value == "quarter") {
+                        knockout(4, 1);
+                    }
+
+                    if (document.querySelector('select[name=knock').value == "semi") {
+                        knockout(2, 2);
+                    }
+                    if (document.querySelector('select[name=knock').value == "third") {
+                        knockout(1, 3);
+                    }
+                    if (document.querySelector('select[name=knock').value == "final") {
+                        knockout(1, 4);
+                    }
+                }
+
+            };
+            xhttp.open("GET", "knockoutStages.json", true); // used generator here
+            xhttp.send();
+
+        }
+
+        function scorer() {
+            var wcObj;
+            var xhttp = new XMLHttpRequest();
+            var result = "";
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    var wcTxt = this.responseText;
+                    wcObj = JSON.parse(wcTxt);
+
+                    var names = "";
+
+                    names += "<table><tr><th> TOP GOALSCORERS</th></tr></table>"
+                    names += "<table><tr> <th>Name</th><th>TEAM</th> <th>Goals</th> <th>Assists</th> <th>Played</th> </tr></table>"
+                    for (var i = 0; i < 10; i++) {
+                        names += "<table><tr><td>" + wcObj.scorers[i].name + "</td><td> " +
+                            " <img src=teams/" + wcObj.scorers[i].team + ".png width='80' height='55'></td><td> " +
+                            wcObj.scorers[i].goals + "</td><td>" + wcObj.scorers[i].assists + "</td><td>" +
+                            wcObj.scorers[i].played + "</td></tr></table>";
+                    }
+                    document.getElementById("demo").innerHTML = names;
+
+
+                }
+
+            };
+            xhttp.open("GET", "topScorers.json", true); // used generator here
+            xhttp.send();
+
+        }
+
+        function resetPage() {
+            window.location.reload();
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>

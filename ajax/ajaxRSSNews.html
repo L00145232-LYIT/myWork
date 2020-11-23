@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title> Ajax: RSS </title>
+	<script type="text/javascript" src="ajax.js"></script>
+	<link type="text/css" rel="stylesheet" href="ajax.css" />
+</head>
+
+<body>
+	<h1>AJAX news Demo</h1>
+	<div class="divAll">
+		<span class="RSSTitle">RSS</span>
+		<div class="form">
+			<form name="myForm">
+				<input type="radio" value="bbc" name="rss" onclick="ajaxFunctionPage('BBC News');" /> BBC News
+				<input type="radio" value="rte" name="rss" onclick="ajaxFunctionPage('RTE News');" /> RTE News
+				<input type="radio" value="sky" name="rss" onclick="ajaxFunctionPage('Sky Sports');" /> Joe bloggs
+				News
+				<span class="number">
+					<select id="number" onchange="selectChange()"></select>
+				</span>
+			</form>
+			<br>
+			<div id="rss_feed">hello help me please!!</div>
+		</div>
+	</div>
+</body>
+
+</html>

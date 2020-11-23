@@ -1,0 +1,277 @@
+{
+  "name": "World Cup 2018",
+  "groups": [
+    {
+      "name": "Group A",
+      "teams": [
+        {
+          "name": "Uruguay",
+          "points": "9",
+          "wins": "3",
+          "draws": "0",
+          "loses": "0"
+        },
+        {
+          "name": "Russia",
+          "points": "6",
+          "wins": "2",
+          "draws": "0",
+          "loses": "1"
+        },
+        {
+          "name": "Saudi_Arabia",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses": "2"
+        },
+        {
+          "name": "Egypt",
+          "points": "0",
+          "wins": "0",
+          "draws": "0",
+          "loses": "3"
+        }
+      ]
+    },
+    {
+      "name": "Group B",
+      "teams": [
+        {
+          "name": "Spain",         
+          "points": "5",
+          "wins": "1",
+          "draws": "2",
+          "loses": "0"
+        },
+        {
+          "name": "Portugal",
+          "points": "5",
+          "wins": "1",
+          "draws": "2",
+          "loses": "0"
+        },
+        {
+          "name": "Iran",
+          "points": "4",
+          "wins": "1",
+          "draws": "1",
+          "loses": "1"
+        },
+        {
+          "name": "Morocco",
+          "points": "1",
+          "wins": "0",
+          "draws": "1",
+          "loses": "2"
+        }
+      ]
+    },
+    {
+      "name": "Group C",
+      "teams": [
+        {
+          "name": "France",
+          "points": "7",
+          "wins": "2",
+          "draws": "1",
+          "loses":"0"
+        },
+        {
+          "name": "Denmark",
+          "points": "5",
+          "wins": "1",
+          "draws": "2",
+          "loses":"0"
+        },
+        {
+          "name": "Peru",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        },
+        {
+          "name": "Australia",
+          "points": "1",
+          "wins": "0",
+          "draws": "1",
+          "loses":"2"
+        }
+      ]
+    },
+    {
+      "name": "Group D",
+      "teams": [
+      
+        {
+          "name": "Croatia",
+          "points":"9" ,
+          "wins": "3",
+          "draws": "0",
+          "loses":"0"
+        },
+        {
+          "name": "Argentina",
+          "points": "4",
+          "wins": "1",
+          "draws": "1",
+          "loses":"1"
+        },
+        {
+          "name": "Nigeria",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        }
+        ,
+        {
+          "name": "Iceland",
+          "points": "1",
+          "wins": "0",
+          "draws": "1",
+          "loses":"2"
+        }
+      ]
+    },
+    {
+      "name": "Group E",
+      "teams": [
+        {
+          "name": "Brazil",
+          "points":"7" ,
+          "wins": "2",
+          "draws": "1",
+          "loses":"0"
+        },
+        {
+          "name": "Switzerland",
+          "points": "5",
+          "wins": "1",
+          "draws": "2",
+          "loses":"0"
+        },
+        {
+          "name": "Serbia",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        },
+        {
+          "name": "Costa_Rica",
+          "points": "1",
+          "wins": "0",
+          "draws": "1",
+          "loses":"2"
+        }
+
+      ]
+    },
+    {
+      "name": "Group F",
+      "teams": [
+     
+        {
+          "name": "Sweden",
+          "points":"6" ,
+          "wins": "2",
+          "draws": "0",
+          "loses":"1"
+        },
+        {
+          "name": "Mexico",
+          "points": "6",
+          "wins": "2",
+          "draws": "0",
+          "loses":"1"
+        },
+        {
+          "name": "Korea_Republic",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        },
+        {
+          "name": "Germany",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        }
+      ]
+    },
+    {
+      "name": "Group G",
+      "teams": [
+       
+        {
+          "name": "Belgium",
+          "points": "9",
+          "wins": "3",
+          "draws": "0",
+          "loses":"0"
+        },
+        {
+          "name": "England",
+          "points": "6",
+          "wins": "2",
+          "draws": "0",
+          "loses":"0"
+        },
+        {
+          "name": "Tunisia",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        },
+        {
+          "name": "Panama",
+          "points": "0",
+          "wins": "0",
+          "draws": "0",
+          "loses":"3"
+        }
+      ]
+    },
+    {
+      "name": "Group H",
+      "teams": [
+    
+        {
+          "name": "Colombia",
+          "points": "6",
+          "wins": "2",
+          "draws": "0",
+          "loses":"1"
+        },
+        {
+          "name": "Japan",
+          "points": "4",
+          "wins": "1",
+          "draws": "1",
+          "loses":"1"
+        },
+     
+        {
+          "name": "Senegal",
+          "points": "1",
+          "wins": "1",
+          "draws": "1",
+          "loses":"0"
+        },
+        {
+          "name": "Poland",
+          "points": "3",
+          "wins": "1",
+          "draws": "0",
+          "loses":"2"
+        }
+      
+      ]
+    }
+  ]
+}

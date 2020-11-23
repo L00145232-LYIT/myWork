@@ -1,0 +1,76 @@
+{
+    "name": "World Cup 2018",
+    "scorers":[
+        {
+            "name": "Harry Kane",
+            "team": "England",
+            "goals": 6,
+            "assists": 0,
+            "played":6   
+
+        },
+        {
+            "name": "Antoine Griezmann",
+            "team": "France",
+            "goals": 4,
+            "assists": 2,
+            "played":7         
+        },
+        {
+            "name": "Romelu Lukaku",
+            "team": "Belgium",
+            "goals": 4,
+            "assists": 1,
+            "played":6           
+        },
+        {
+            "name": "Denis Cheryshev",
+            "team": "Russia",
+            "goals": 4,
+            "assists": 0,
+            "played":5           
+        },
+        {
+            "name": "Cristiano Ronaldo",
+            "team": "Portugal",
+            "goals": 4,
+            "assists": 0,
+            "played":4           
+        },
+        {
+            "name": "Kylian Mbappe",
+            "team": "France",
+            "goals": 4,
+            "assists": 0,
+            "played":7           
+        },
+        {
+            "name": "Artem Dyzuba",
+            "team": "Russia",
+            "goals": 3,
+            "assists": 2,
+            "played":5           
+        },
+        {
+            "name": "Eden Hazard",
+            "team": "Belgium",
+            "goals": 3,
+            "assists": 2,
+            "played":6 
+        },
+        {
+            "name": "Mario Mandzukic",
+            "team": "Croatia",
+            "goals": 3,
+            "assists": 2,
+            "played":7         
+        },
+        {
+            "name": "Ivan Perisic",
+            "team": "Croatia",
+            "goals": 3,
+            "assists": 1,
+            "played":7         
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="xpsport2.xsl"?>
+<Athletes>
+      <sports field="Football">
+            <name>Coleman</name>
+            <country>Ireland</country>
+            <income>1200000</income>
+      </sports>
+      <sports field="Football">
+            <name>J Terry</name>
+            <country>England</country>
+            <income>6000000</income>
+      </sports>
+      <sports field="Football">
+            <name>T Pogba</name>
+            <country>France</country>
+            <income>6500000</income>
+      </sports>
+      <sports field="Football">
+            <name>W Rooney</name>
+            <country>England</country>
+            <income>7000000</income>
+      </sports>
+      <sports field="Golf">
+            <name>P Harrinton</name>
+            <country>Ireland</country>
+            <income>3500000</income>
+      </sports>
+      <sports field="Golf">
+            <name>P McGinley</name>
+            <country>Ireland</country>
+            <income>1700000</income>
+      </sports>
+      <sports field="Golf">
+            <name>T Woods</name>
+            <country>America</country>
+            <income>35000000</income>
+      </sports>
+      <sports field="Golf">
+            <name>I Poulter</name>
+            <country>England</country>
+            <income>1000000</income>
+      </sports>
+</Athletes>
+
