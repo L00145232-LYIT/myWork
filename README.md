@@ -1,3 +1,3 @@
 # My Work
-A collection of my first three years of coding
+A collection of my years of coding
 
